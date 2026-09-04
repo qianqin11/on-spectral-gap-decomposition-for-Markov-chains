@@ -42,7 +42,7 @@ All entries in columns $9,\ldots,k$ are zero. Consequently,
 
 $$
 I_k+\frac14\Xi^\mathsf T\Xi
-=\operatorname{diag}(\xi I_8,I_{k-8}),
+=\mathrm{diag}(\xi I_8,I_{k-8}),
 $$
 
 so the negative log-posterior is $1$-strongly convex and $\xi$-smooth.
@@ -63,13 +63,13 @@ The construction permits independent exact draws from $\pi$. The first eight
 posterior coordinates are independent with marginal density proportional to
 
 $$
-t\longmapsto \phi(t)\operatorname{sech}^{2r}
+t\longmapsto \phi(t)\mathrm{sech}^{2r}
 \!\left(\frac{a_{\xi,r}t}{2}\right),
 $$
 
 where $\phi$ is the standard-normal density. The code proposes $t\sim N(0,1)$
 and accepts it with probability
-$\operatorname{sech}^{2r}(a_{\xi,r}t/2)$. The remaining coordinates are
+$\mathrm{sech}^{2r}(a_{\xi,r}t/2)$. The remaining coordinates are
 independent $N(0,1)$ variables. This exact stationary sampler is available
 because of the specially factorized design above; it is not a generic method
 for logistic-regression posteriors.
@@ -78,7 +78,7 @@ For an $S$ update, the code draws a direction $w$ uniformly from the unit
 sphere and sets $u=w^\mathsf T\beta$. It then draws
 
 $$
-s\sim\operatorname{Unif}\{0,\ldots,J-1\},
+s\sim\mathrm{Unif}\{0,\ldots,J-1\},
 \qquad J=1+\lceil\log_2\xi\rceil,
 $$
 
@@ -173,8 +173,8 @@ For $\widehat R=\bar A/\bar B$, the estimated standard error on the log scale
 is
 
 $$
-\widehat{\operatorname{se}}\{\log(\widehat R)\}
-=\frac{\operatorname{sd}
+\widehat{\mathrm{se}}\{\log(\widehat R)\}
+=\frac{\mathrm{sd}
 \!\left(A_i/\bar A-B_i/\bar B\right)}{\sqrt N}.
 $$
 
@@ -182,7 +182,7 @@ The pointwise 95% interval is
 
 $$
 \widehat R\exp\!\left[
-\pm1.96\,\widehat{\operatorname{se}}\{\log(\widehat R)\}
+\pm1.96\,\widehat{\mathrm{se}}\{\log(\widehat R)\}
 \right].
 $$
 
