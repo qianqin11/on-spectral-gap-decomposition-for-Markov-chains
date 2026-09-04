@@ -1,0 +1,12 @@
+active coordinates q0 = 8
+path values = 16, 32, 64, 128, 256, 512, 1024, 2048, 4096
+k path = vary k with n=128 and xi=8
+xi path = vary xi with k=16 and n=128
+n path = vary n with k=16 and xi=8
+n_pairs per configuration = 100000
+rows per memory-safe batch = 500
+k path seed = 8172028
+xi and n paths seed = 8172030
+random-number generator = NumPy Generator(PCG64)
+S and bar S directions = conditionally independent given beta
+implementation = original full-dimensional sampler

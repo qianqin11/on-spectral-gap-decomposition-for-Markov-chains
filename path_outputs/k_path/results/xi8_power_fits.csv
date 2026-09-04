@@ -1,0 +1,5 @@
+ratio,coordinate_role,estimated_power,r_squared
+ratio_S_bar_S,j = 1,-0.12417933119572437,0.8934793905233598
+ratio_S_bar_S,j = k,-0.1134581255284131,0.8662406091336848
+ratio_S_posterior_variance,j = 1,-0.8760835602256497,0.9943917792622969
+ratio_S_posterior_variance,j = k,-0.901260067191345,0.9962024449816604

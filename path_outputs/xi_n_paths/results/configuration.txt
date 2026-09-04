@@ -1,0 +1,10 @@
+seed = 8172030
+n_pairs per configuration = 100000
+rows per memory-safe batch = 500
+active coordinates q0 = 8
+path values = 16, 32, 64, 128, 256, 512, 1024, 2048, 4096
+xi path fixed values = k=16, n=128
+n path fixed values = k=16, xi=8
+implementation = original full-dimensional sampler
+S and bar S directions = conditionally independent given beta
+random-number generator = NumPy Generator(PCG64)
